@@ -58,8 +58,8 @@ cd auth0-react-samples
 
 There are two methods with which you can run the Auth0 React Quickstart application examples:
 
-0. Docker
-1. Directly on your machine
+* **Docker** (recommended)
+* Directly on your machine
 
 To keep your machine clean of potential conflicts in library versions, and to ensure a consistent experience
 in running these examples Auth0 recommends using Docker.
