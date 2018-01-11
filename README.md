@@ -61,10 +61,16 @@ There are two methods with which you can run the Auth0 React Quickstart applicat
 * **Docker** (recommended)
 * Directly on your machine
 
+#### 3a - Prepare to Run with Docker
+
 To keep your machine clean of potential conflicts in library versions, and to ensure a consistent experience
 in running these examples Auth0 recommends using Docker.
 
-If you don't have Docker installed, Auth0 recommends the free [Docker Community Edition](https://www.docker.com/community-edition).
+> If you don't have Docker installed, Auth0 recommends the free [Docker Community Edition](https://www.docker.com/community-edition).
+
+Once you have Docker installed, you can run the examples with no additional installation necessary.
+
+#### 3b - Prepare to Run on Your Machine
 
 If you prefer to run the examples directly on your machine, you'll need to install the `create-react-app` module from npm, globally,
 along with the dependencies for each application instance.
