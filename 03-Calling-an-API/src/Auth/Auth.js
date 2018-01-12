@@ -4,9 +4,9 @@ import history from '../history';
 
 // check the auth0 configuration
 if (
-  AUTH_CONFIG.domain !== "{DOMAIN}" ||
-  AUTH_CONFIG.clientId !== "{CLIENT_ID}" ||
-  AUTH_CONFIG.apiUrl !== "{API_IDENTIFIER}"
+  AUTH_CONFIG.domain === "{DOMAIN}" ||
+  AUTH_CONFIG.clientId === "{CLIENT_ID}" ||
+  AUTH_CONFIG.apiUrl === "{API_IDENTIFIER}"
 ) {
   const err = new Error("You must configure the Auth0 variables - Domain, Client ID, and API Identifier - at /src/Auth/auth0-variables.js");
   err.name = "MISSING_AUTH0_CONFIG";
