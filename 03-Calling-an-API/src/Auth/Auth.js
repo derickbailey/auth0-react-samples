@@ -2,6 +2,17 @@ import auth0 from 'auth0-js';
 import { AUTH_CONFIG } from './auth0-variables';
 import history from '../history';
 
+// check the auth0 configuration
+if (
+  AUTH_CONFIG.domain !== "{DOMAIN}" ||
+  AUTH_CONFIG.clientId !== "{CLIENT_ID}" ||
+  AUTH_CONFIG.apiUrl !== "{API_IDENTIFIER}"
+) {
+  const err = new Error("You must configure the Auth0 variables - Domain, Client ID, and API Identifier - at /src/Auth/auth0-variables.js");
+  err.name = "MISSING_AUTH0_CONFIG";
+  throw err;
+}
+
 export default class Auth {
   auth0 = new auth0.WebAuth({
     domain: AUTH_CONFIG.domain,
