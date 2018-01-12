@@ -83,7 +83,7 @@ There are 2 methods of running the application.
 In order to run the example with docker you need to have `docker` installed. You also need to set 
 the environment variables as explained [previously](#set-the-client-id-and-domain).
 
-Execute in command line `sh exec.sh` to run the Docker in Linux, or `.\exec.ps1` to run the Docker in Windows.
+Execute in command line `./exec` to run the Docker in Linux or Mac, or `.\exec.ps1` to run the Docker in Windows.
 
 This will build the Docker image and launch a Docker container to run the application for you.
 The application will be served at `http://localhost:3000`.
