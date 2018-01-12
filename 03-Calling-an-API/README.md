@@ -52,11 +52,10 @@ better understanding.`
 If you download the sample from the quickstart page, it will come pre-populated with the 
 **client ID** and **domain** for your application. 
 
-If you clone the repo directly from Github, rename the `auth0-variables.js.example` file 
-to `auth0-variables.js` and provide the **client ID** and **domain** there. This file is located 
-in `src/Auth/`.
+If you clone the repo directly from Github, edit the `/src/Auth/auth0-variables.js` file 
+to provide the **client ID**, **domain** variables.
 
-You should also provide the identifier for the API you create in the Auth0 dashboard as your `apiUrl`.
+You should also provide the identifier for the API you create in the Auth0 dashboard as your **apiUrl**.
 
 ### 4 - Set Up the `.env` File
 

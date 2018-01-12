@@ -7,8 +7,10 @@ const cors = require('cors');
 const morgan = require('morgan');
 require('dotenv').config();
 
-if (!process.env.AUTH0_DOMAIN || !process.env.AUTH0_AUDIENCE) {
-  throw 'Make sure you have AUTH0_DOMAIN, and AUTH0_AUDIENCE in your .env file'
+if (process.env.AUTH0_DOMAIN === '{DOMAIN}' || process.env.AUTH0_AUDIENCE === '{API_IDENTIFIER}') {
+  var err = new Error('Make sure you have AUTH0_DOMAIN, and AUTH0_AUDIENCE in your .env file');
+  err.name = "MISSING_AUTH0_CONFIG";
+  throw err;
 }
 
 app.use(cors());
